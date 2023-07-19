@@ -53,7 +53,7 @@ const Timer = () => {
   return (
     <div className='timer-container'>
       <div className='result'>Осталось времени: {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}</div>
-      <input className='timer-input' type="text" onChange={handleTimeChange} placeholder="ЧЧ:ММ:СС"/>
+      <input className='timer-input' type="time" onChange={handleTimeChange} placeholder="ЧЧ:ММ:СС" step={2}/>
     </div>
   );
 };
